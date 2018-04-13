@@ -42,7 +42,6 @@
         <cucumber.version>1.2.4</cucumber.version>
         <dropwizard.version>3.1.2</dropwizard.version>
         <eclipselink.version>2.6.3</eclipselink.version>
-        <elasticsearch.version>2.3.4</elasticsearch.version>
         <findbugs.version>2.0.1</findbugs.version>
         <gson.version>2.7</gson.version>
         <guava.version>19.0</guava.version>
@@ -68,11 +67,11 @@
         <swagger.version>1.5.12</swagger.version>
         <validation-api.version>1.1.0.Final</validation-api.version>
         <cucumber.version>1.2.4</cucumber.version>
-        <elasticsearch.version>5.3.0</elasticsearch.version>
-        <elasticsearch-client-transport.version>5.3.0</elasticsearch-client-transport.version>
-        <elasticsearch-client-rest.version>5.3.0</elasticsearch-client-rest.version>
-        <elasticsearch-netty-3.version>3.10.6.Final</elasticsearch-netty-3.version>
-        <elasticsearch-netty-4.version>4.1.15.Final</elasticsearch-netty-4.version>
+        <elasticsearch.version>6.2.3</elasticsearch.version>
+        <elasticsearch-client-transport.version>6.2.3</elasticsearch-client-transport.version>
+        <elasticsearch-client-rest.version>5.5.3</elasticsearch-client-rest.version>
+        <elasticsearch-netty-3.version>5.6.8</elasticsearch-netty-3.version>
+        <elasticsearch-netty-4.version>6.2.3</elasticsearch-netty-4.version>
         <jackson.version>2.8.6</jackson.version> <!-- same version used by elasticsearch -->
         <log4j-api.version>2.8.2</log4j-api.version> <!-- same version used by elasticsearch -->
         <log4j-to-slf4j.version>2.8.2</log4j-to-slf4j.version> <!-- same version used by elasticsearch -->
@@ -373,6 +372,7 @@
                         </dependency>
                     </dependencies>
                     <configuration>
+                        <skip>true</skip>
                         <configLocation>checkstyle/kapua.xml</configLocation>
                         <suppressionsLocation>checkstyle/kapua.suppressions.xml</suppressionsLocation>
 
@@ -1211,7 +1211,7 @@
             <dependency>
                 <groupId>io.netty</groupId>
                 <artifactId>netty-all</artifactId>
-                <version>${elasticsearch-netty-4.version}</version>
+                <version>4.1.23.Final</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.activemq</groupId>

@@ -235,7 +235,7 @@
         <dependency>
             <groupId>org.elasticsearch.plugin</groupId>
             <artifactId>transport-netty3-client</artifactId>
-            <version>${elasticsearch-client-transport.version}</version>
+            <version>${elasticsearch-netty-3.version}</version>
         </dependency>
         <dependency>
             <groupId>org.elasticsearch.plugin</groupId>
